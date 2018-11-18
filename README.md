@@ -14,3 +14,7 @@ The Dockerfile is where most of the configuration happens. To run this repo here
   <li> Run the docker build command again <em>sudo docker build . -t {some other tag} </em></li>
   <li> Your container should now be ready to run </li>
   <li> Run the docker container <em>sudo docker run -p 80:5000 {some other tag} </em></li>
+  
+  </ol>
+  
+   Don't forget to open port 80 in the networking ACLs.
