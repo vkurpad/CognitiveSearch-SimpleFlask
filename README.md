@@ -5,4 +5,10 @@ The Dockerfile is where most of the configuration happens. To run this repo here
 <ol>
   <li> Move the Dockerfile to Dockerfile.final</li>
   <li> Move the Dockerfile.base to Dockerfile</li>
-  <li> Run the docker build command <em>sudo docker build . -t <some tag> </em></li>
+  <li> Run the docker build command <em>sudo docker build . -t {some tag} </em></li>
+  <li> Swap the Dockerfiles again ... Move Dockerfile to Dockerfile.base, Move Dockerfile.final to Dockerfile</li>
+  <li> Move the Dockerfile to Dockerfile.final</li>
+  <li> Make sure you have a folder called outputs with the .pkl file needed</li>
+  <li> Run the docker build command again <em>sudo docker build . -t {some other tag} </em></li>
+  <li> Your container should now be ready to run </li>
+  <li> Run the docker container <em>sudo docker run -p 80:5000 {some other tag} </em></li>
