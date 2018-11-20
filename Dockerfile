@@ -9,6 +9,8 @@ RUN echo $PATH
 COPY app.py /
 COPY entrypoint.sh /
 COPY __init__.py /
+COPY cert.pem /
+COPY key.pem /
 
 ENTRYPOINT ["/bin/bash", "-c", "source activate tatk-env && exec /miniconda/envs/tatk-env/bin/python __init__.py"]
 #ENTRYPOINT ["/miniconda/bin/python", "/__init__.py"]
