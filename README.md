@@ -24,6 +24,7 @@ The Dockerfile is where most of the configuration happens. To run this repo here
   </ol>
   
   Follow the instructions <a href="https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-acr">to deploy a container to Azure Container Instances</a>.
-   Don't forget to open port 80 in the networking ACLs.
+  
+  <br>Don't forget to open port 80 in the networking ACLs.
    
    SSL only uses a self signed Cert, so if you are testing locally, you will see some warnings.
