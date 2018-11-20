@@ -42,7 +42,7 @@ def predict():
         loaded_entity_extractor.transform(df)
         print(df.head())
         record =  {
-            "recordId": "a1",
+            "recordId": rec["recordId"],
             "data": {
                 "text": df["label"].tolist()
             },
